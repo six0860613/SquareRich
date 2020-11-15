@@ -1,0 +1,157 @@
+html,body{
+    height: 100%;
+}
+.navbar-top{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height:10%;
+}
+header { 
+    height: 80%; 
+    position: relative; 
+    background-color: rgb(255, 255, 255); 
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:10%;
+    background-color: hotpink;
+    color:white;
+}
+
+.img{
+    max-width:100%; /* 圖片放大比例不超過原圖大小 */
+    height:auto;
+}
+
+
+/* carousel部分 */
+
+
+.carousel { 
+    height: 100%; 
+}
+.carousel-inner, .carousel-item { 
+    height: 100%; 
+}
+.carousel-item { 
+    background-size: cover; 
+    background-position: center; 
+}
+.carousel-item:nth-of-type(1) { 
+    background-image:url('image/index_slide_1.png'); 
+}
+.carousel-item:nth-of-type(2) { 
+    background-image:url('image/index_slide_2.png'); 
+}
+.carousel-item:nth-of-type(3) { 
+    background-image:url('image/index_slide_3.png'); 
+}
+
+
+/* 滑鼠滑入顯示按鈕 */
+.carousel-control-prev, .carousel-control-next, .carousel-indicators {
+opacity: 0;
+/* Firefox */
+-moz-transition-property: opacity;
+-moz-transition-duration: 0.2s;
+-moz-transition-delay: 0.2s;
+/* WebKit */
+-webkit-transition-property: opacity;
+-webkit-transition-duration: 0.2s;
+-webkit-transition-delay: 0.2s;
+/* Opera */
+-o-transition-property: opacity;
+-o-transition-duration: 0.2s;
+-o-transition-delay: 0.2s;
+/* chrome */
+transition-property: opacity;
+transition-duration: 0.2s;
+transition-delay: 0.2s;
+}
+.carousel-control-prev:hover .carousel-control-prev, 
+.carousel-control-next:hover .carousel-control-next{
+opacity: 1.0;
+}
+@media (max-width: 768px) { 
+    .carousel:hover .carousel-control-prev, 
+    .carousel:hover .carousel-control-next{
+    opacity: 1.0;
+    }
+}
+
+
+/* navbar部分 */
+
+@media (max-width: 768px) { 
+     .navbar-collapse-bg{
+        background-color: rgba(99, 90, 90, 0.308);
+    }
+    .home-text2{
+        display:none;
+    }
+}/* 摺疊選單背景 */
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}/* dropdown-menu觸發由click改為hover */
+
+.dropdown-menu{
+    margin-top: 0;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}/* 隱藏dropdown-menu旁的箭頭 */
+
+/* 按鈕滑入滑出效果 */
+@media(min-width: 768px){
+    .navbar-nav{
+        width:200px;
+        margin-right: 10%;
+    }
+    .home-hover{position: relative;}
+    .home-text1{
+        position: absolute;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .home-text2{
+        position: absolute;
+        transform:scaleY(0);
+        transition:transform 0.2s;
+    }
+    
+    .home-hover:hover .home-text1{opacity: 0;}
+    .home-hover:hover .home-text2{transform:scaleY(1);}
+}
+
+
+
+
+
+
+/* footer部分 */
+
+.bg-2{
+    background-color: green;
+}
+.bg-3{
+    background-color: red;
+}
+.bg-4{
+    background-color: gray;
+}
+.bg-5{
+    background-color: blue;
+}
+
+.footer-content{
+    height:100%;
+    margin-top:2%;
+}

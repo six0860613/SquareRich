@@ -1,5 +1,12 @@
 html,body{
     height: 100%;
+    font-family: "Consolas", "游ゴシック体", "sans-serif";
+    font-size: 16px;
+}
+@media(max-width: 767px){
+    html,body{
+        font-size: 13px;
+    }
 }
 .navbar-top{
     position: sticky;
@@ -14,13 +21,14 @@ header {
 }
 
 .footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     height:10%;
     background-color: hotpink;
     color:white;
 }
+
 
 .img{
     max-width:100%; /* 圖片放大比例不超過原圖大小 */
@@ -42,13 +50,13 @@ header {
     background-position: center; 
 }
 .carousel-item:nth-of-type(1) { 
-    background-image:url('image/index_slide_1.png'); 
+    background-image:url('image/index_slide_1.jpg'); 
 }
 .carousel-item:nth-of-type(2) { 
-    background-image:url('image/index_slide_2.png'); 
+    background-image:url('image/index_slide_2.jpg'); //需要修改
 }
 .carousel-item:nth-of-type(3) { 
-    background-image:url('image/index_slide_3.png'); 
+    background-image:url('image/index_slide_3.jpg'); 
 }
 
 
@@ -86,7 +94,7 @@ opacity: 1.0;
 
 /* navbar部分 */
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
      .navbar-collapse-bg{
         background-color: rgba(99, 90, 90, 0.308);
     }
@@ -97,11 +105,9 @@ opacity: 1.0;
 
 .dropdown:hover .dropdown-menu{
     display: block;
+    margin-top: 0;
 }/* dropdown-menu觸發由click改為hover */
 
-.dropdown-menu{
-    margin-top: 0;
-}
 
 .dropdown-toggle::after {
     display:none;
@@ -110,11 +116,25 @@ opacity: 1.0;
 /* 按鈕滑入滑出效果 */
 @media(min-width: 768px){
     .navbar-nav{
-        width:200px;
-        margin-right: 10%;
+        width:30%;
+        min-width: 250px;
+        margin-right: 5%;
+        margin-left: 70%;
+        text-align: center;
     }
-    .home-hover{position: relative;}
+    .home-hover{
+        position: relative;
+        height: 40px;
+        padding-right: 0px;
+        padding-left: 0px;
+        justify-self: center;
+    }
     .home-text1{
+        text-align: center;
+        top:0px;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        justify-self: center;
         position: absolute;
         -webkit-transition: opacity 0.3s ease-in-out;
         -moz-transition: opacity 0.3s ease-in-out;
@@ -122,16 +142,54 @@ opacity: 1.0;
         transition: opacity 0.3s ease-in-out;
     }
     .home-text2{
+        text-align: center;
+        top:0px;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
         position: absolute;
         transform:scaleY(0);
         transition:transform 0.2s;
-    }
-    
+    }    
     .home-hover:hover .home-text1{opacity: 0;}
     .home-hover:hover .home-text2{transform:scaleY(1);}
+    .home-hover:hover .home-text3{transform:scaleX(1);}
 }
 
+/* slideBox部分 */
+.slideBox{
+    position: absolute;
+    background-color: lavender;
+    opacity: 60%;
+    width: 25%;
+    min-width: 300px;
+    height: 70%;
+    margin-left: 0;
+    margin-top: 5%;
+    z-index: 2;
+    animation-name: fade-left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@media (max-width: 768px){
+    .slideBox{
+        width: 35%;
+        height: 30%;
+        min-width: 130px;
+        min-height: 170px;
+        margin-top: 15%;
+    }
+}
 
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+}
 
 
 
@@ -154,4 +212,42 @@ opacity: 1.0;
 .footer-content{
     height:100%;
     margin-top:2%;
+}
+
+/* Project Page */
+//字型字體
+t1{font-size: 5vmin; font-family: "Cambria";}
+t2{font-size: 1vmin;}
+t3{font-size: 1vmin;} 
+
+
+.projectBox{
+    position: relative;    
+    min-height:900px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+@media (max-width: 768px){
+    .projectBox{
+        min-height:600px;
+    }
+}
+
+.proBorder{
+    width: 100%;
+    border: transparent;
+    border-top: gray;
+    border-style: solid;
+}
+
+.gotoTop {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	cursor: pointer;
+	position:fixed;
+	right: 0.5rem;
+	bottom: 11%;
+    display: none;    
 }

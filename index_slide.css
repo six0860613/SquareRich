@@ -1,0 +1,22 @@
+/* carousel部分 */
+
+
+.carousel { 
+    height: 100%; 
+}
+.carousel-inner, .carousel-item { 
+    height: 100%; 
+}
+.carousel-item { 
+    background-size: cover; 
+    background-position: center; 
+}
+.carousel-item:nth-of-type(1) { 
+    background-image:url('image/index_slide_1.jpg'); 
+}
+.carousel-item:nth-of-type(2) { 
+    background-image:url('image/index_slide_2.jpg'); //需要修改
+}
+.carousel-item:nth-of-type(3) { 
+    background-image:url('image/index_slide_3.jpg'); 
+}

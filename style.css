@@ -36,30 +36,6 @@ header {
 }
 
 
-/* carousel部分 */
-
-
-.carousel { 
-    height: 100%; 
-}
-.carousel-inner, .carousel-item { 
-    height: 100%; 
-}
-.carousel-item { 
-    background-size: cover; 
-    background-position: center; 
-}
-.carousel-item:nth-of-type(1) { 
-    background-image:url('image/index_slide_1.jpg'); 
-}
-.carousel-item:nth-of-type(2) { 
-    background-image:url('image/index_slide_2.jpg'); //需要修改
-}
-.carousel-item:nth-of-type(3) { 
-    background-image:url('image/index_slide_3.jpg'); 
-}
-
-
 /* 滑鼠滑入顯示按鈕 */
 .carousel-control-prev, .carousel-control-next, .carousel-indicators {
 opacity: 0;
@@ -119,7 +95,7 @@ opacity: 1.0;
         width:30%;
         min-width: 250px;
         margin-right: 5%;
-        margin-left: 70%;
+        margin-left: 65%;
         text-align: center;
     }
     .home-hover{
@@ -158,10 +134,9 @@ opacity: 1.0;
 /* slideBox部分 */
 .slideBox{
     position: absolute;
-    background-color: lavender;
-    opacity: 60%;
     width: 25%;
     min-width: 300px;
+    max-width: 300px;
     height: 70%;
     margin-left: 0;
     margin-top: 5%;
@@ -187,8 +162,11 @@ opacity: 1.0;
     }
     100% {
         transform: translateX(0);
-        opacity: 0.5;
+        opacity: 1.0;
     }
+}
+.slideBox_img{
+    max-width: 100%;
 }
 
 
@@ -215,10 +193,19 @@ opacity: 1.0;
 }
 
 /* Project Page */
-//字型字體
-t1{font-size: 5vmin; font-family: "Cambria";}
-t2{font-size: 1vmin;}
-t3{font-size: 1vmin;} 
+
+t1{
+    font-size: 5vmin; font-family: "Cambria";
+}
+t2{
+    font-size: 1vmin;
+}
+t3{
+    font-size: 1vmin;
+} 
+t4{
+    font-size: 1.5rem;
+}
 
 
 .projectBox{
@@ -244,10 +231,16 @@ t3{font-size: 1vmin;}
 	padding: 0;
 	margin: 0;
 	border: 0;
-	border-radius: 33%;
 	cursor: pointer;
 	position:fixed;
 	right: 0.5rem;
 	bottom: 11%;
     display: none;    
+}
+
+/* Project01 Page */
+.title{
+    text-align: center;
+    justify-self: center;
+    font-size: 5rem;
 }

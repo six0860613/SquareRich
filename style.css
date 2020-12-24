@@ -20,19 +20,12 @@ header {
     background-color: rgb(255, 255, 255); 
 }
 
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height:10%;
-    background-color: hotpink;
-    color:white;
-}
 
 
-.img{
+
+img{
     max-width:100%; /* 圖片放大比例不超過原圖大小 */
-    height:auto;
+    max-height:100%;
 }
 
 
@@ -173,23 +166,61 @@ opacity: 1.0;
 
 
 /* footer部分 */
+.footer{
+    position: relative;
+    padding-bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    height:10%;
+    color:rgb(70, 66, 66)
+}
+@media(max-width: 767px){
+    .footer{
+        height:20%;
+    }
+}
+
 
 .bg-2{
-    background-color: green;
+    font-size: 1.5rem;
+    /*background-color: green;*/
+    display: none;
 }
 .bg-3{
-    background-color: red;
+    font-size: 0.7rem;
+    /*background-color: red;*/
 }
 .bg-4{
-    background-color: gray;
+    font-size: 0.7rem;
+    /*background-color: yellowgreen;*/
 }
 .bg-5{
-    background-color: blue;
+    font-size: 0.7rem;
+    /*background-color: blue;*/
+}
+.bg-6{
+    font-size: 0.7rem;
+    /*background-color: blue;*/
 }
 
 .footer-content{
     height:100%;
-    margin-top:2%;
+    margin-top: 0;
+    text-align: center;
+}
+@media(max-width: 767px){
+    .footer{
+        height:20%;
+    }
+    .bg-4, .bg-6{
+        display: none;
+    }
+    .bg-2, .bg-3, .bg-5{
+        display: inline-block;
+    }
+    .bg-5{
+        bottom: 20px;
+    }
 }
 
 /* Project Page */
@@ -201,7 +232,7 @@ t2{
     font-size: 1vmin;
 }
 t3{
-    font-size: 1vmin;
+    font-size: 0.7vmin;
 } 
 t4{
     font-size: 1.5rem;
@@ -227,6 +258,17 @@ t4{
     border-style: solid;
 }
 
+.project2pics{
+    margin-top: 15px;
+}
+@media(min-width: 768px){
+    .project2pics{
+        top: -50px; 
+        vertical-align: top;
+    }
+}
+
+
 .gotoTop {
 	padding: 0;
 	margin: 0;
@@ -243,4 +285,44 @@ t4{
     text-align: center;
     justify-self: center;
     font-size: 5rem;
+}
+.projectDetai{
+    padding: 0px;
+    height: 250px;
+}
+.projectDetaiText{
+    height: 250px;
+    display: inline-block;
+    background-color: rgb(209, 199, 199);
+}
+.projectDetaiFBIG{
+    margin: 0; 
+    margin-top: 20px; 
+    display: inline-block; 
+    vertical-align: top;
+}
+.pSlcikPics{
+    height: auto; 
+    margin-bottom: 10px;
+    padding: 0px;
+    padding-bottom: 10px; 
+    background-color: rgb(209, 199, 199);
+}
+.pSlcikPicsText{
+    padding-top: 50px;
+    padding-left: 30px;
+    font-size: 1.0rem;
+    background-color: rgb(209, 199, 199);
+    text-align: left;
+}
+
+/* About Page */
+.aboutTop{
+    height: 400px; 
+    background-color: rgb(209, 199, 199);
+}
+@media(max-width: 768px){
+    .aboutTop{
+        height: 200px;
+    }
 }

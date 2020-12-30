@@ -2,6 +2,11 @@ html,body{
     height: 100%;
     font-family: "Consolas", "游ゴシック体", "sans-serif";
     font-size: 16px;
+    image-rendering:-moz-crisp-edges;   /* Firefox  */ 
+    image-rendering:-o-crisp-edges;   /* Opera   */ 
+    image-rendering:-webkit-optimize-contrast; /* Safari   */ 
+    image-rendering:optimize-contrast;   /* CSS3 Proposed */ 
+    -ms-interpolation-mode:nearest-neighbor; /* IE8+   */ 
 }
 @media(max-width: 767px){
     html,body{
@@ -59,12 +64,21 @@ opacity: 1.0;
 
 
 /* navbar部分 */
+.navbar{
+    height: 15%;
+}
+@media (max-width: 768px){
+    .navbar{
+        height: 9%;
+    }
+}
+
 .logo{
-    height: 108px;
+    max-width: 200px;
 }
 @media (max-width: 768px){
     .logo{
-        height: 54px;
+        max-width: 100px;
     }
 }
 
@@ -177,17 +191,19 @@ opacity: 1.0;
     font-weight: bold;
     padding: 0;
     font-family: "Cambria";
-    color:rgb(88, 98, 192);
+    color:rgb(65, 70, 85);
 }
 .sbt02{
     font-size: 0.75rem;
     padding: 0;
     font-family: "Cambria";
+    color:rgb(65, 70, 85);
 }
 .sbt03{
     font-size: 0.8rem;
     padding: 0;
     font-family: "Cambria";
+    color:rgb(65, 70, 85);
 }
 
 

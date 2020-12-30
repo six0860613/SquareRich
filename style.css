@@ -20,9 +20,6 @@ header {
     background-color: rgb(255, 255, 255); 
 }
 
-
-
-
 img{
     max-width:100%; /* 圖片放大比例不超過原圖大小 */
     max-height:100%;
@@ -62,10 +59,23 @@ opacity: 1.0;
 
 
 /* navbar部分 */
+.logo{
+    height: 108px;
+}
+@media (max-width: 768px){
+    .logo{
+        height: 54px;
+    }
+}
 
 @media (max-width: 767px) { 
      .navbar-collapse-bg{
         background-color: rgba(99, 90, 90, 0.308);
+        position: absolute;
+        width: 120px;
+        right: 10px;
+        top: 105%;
+        z-index: 5;
     }
     .home-text2{
         display:none;
@@ -77,6 +87,11 @@ opacity: 1.0;
     margin-top: 0;
 }/* dropdown-menu觸發由click改為hover */
 
+.dropdown-menu{
+    min-width: 75px;
+    text-align: center;
+}
+
 
 .dropdown-toggle::after {
     display:none;
@@ -85,25 +100,19 @@ opacity: 1.0;
 /* 按鈕滑入滑出效果 */
 @media(min-width: 768px){
     .navbar-nav{
-        width:30%;
-        min-width: 250px;
-        margin-right: 5%;
-        margin-left: 65%;
-        text-align: center;
+        font-size: 0.8rem;
+        min-width: 20%;
+        margin-top: 50px;
+        font-family: "Cambria";
+        letter-spacing: 2px;
     }
     .home-hover{
         position: relative;
         height: 40px;
-        padding-right: 0px;
-        padding-left: 0px;
-        justify-self: center;
+        padding: 0;
     }
     .home-text1{
-        text-align: center;
-        top:0px;
-        padding-right: 0px!important;
-        padding-left: 0px!important;
-        justify-self: center;
+        top: 0;
         position: absolute;
         -webkit-transition: opacity 0.3s ease-in-out;
         -moz-transition: opacity 0.3s ease-in-out;
@@ -111,10 +120,8 @@ opacity: 1.0;
         transition: opacity 0.3s ease-in-out;
     }
     .home-text2{
-        text-align: center;
-        top:0px;
-        padding-right: 0px!important;
-        padding-left: 0px!important;
+        top: 0;
+        left: 5px;
         position: absolute;
         transform:scaleY(0);
         transition:transform 0.2s;
@@ -124,11 +131,13 @@ opacity: 1.0;
     .home-hover:hover .home-text3{transform:scaleX(1);}
 }
 
+
+
 /* slideBox部分 */
 .slideBox{
     position: absolute;
-    width: 25%;
-    min-width: 300px;
+    width: 28%;
+    min-width: 120px;
     max-width: 300px;
     height: 70%;
     margin-left: 0;
@@ -160,6 +169,7 @@ opacity: 1.0;
 }
 .slideBox_img{
     max-width: 100%;
+    position: absolute;
 }
 
 
@@ -187,19 +197,23 @@ opacity: 1.0;
     display: none;
 }
 .bg-3{
-    font-size: 0.7rem;
+    font-size: 1.0rem;
+    letter-spacing: 2px;
     /*background-color: red;*/
 }
 .bg-4{
-    font-size: 0.7rem;
+    font-size: 0.1rem;
+    letter-spacing: 2px;
     /*background-color: yellowgreen;*/
 }
 .bg-5{
-    font-size: 0.7rem;
+    font-size: 0.1rem;
+    letter-spacing: 2px;
     /*background-color: blue;*/
 }
 .bg-6{
-    font-size: 0.7rem;
+    font-size: 0.1rem;
+    letter-spacing: 2px;
     /*background-color: blue;*/
 }
 
@@ -236,6 +250,9 @@ t3{
 } 
 t4{
     font-size: 1.5rem;
+}
+t5{
+    font-size: 1px;
 }
 
 

@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-  
-  
-    <title>矩沛室內裝修設計</title>
-    <link rel="icon" href="image/icon.jpg">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href="index_slide.css" rel="stylesheet">
-  
-  </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>矩沛室內裝修設計</title>
+  <link rel="icon" href="image/icon.jpg">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="index_slide.css" rel="stylesheet">
+
+</head>
 
 <body>
   <!-- Navigation -->
   <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
   <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
-  <nav class="navbar navbar-expand-md navbar-light">
+  <nav id="TopNavbar" class="navbar navbar-expand-md navbar-light" style="background-color: white;">
 
     <!-- .navbar-brand 左上LOGO位置 -->
     <a class="navbar-brand" href="index.html">
-      <img src="image/logo.jpg" class="logo d-inline-block align-top" alt="logo">
+      <img src="image/index_logo.jpg" class="logo d-inline-block align-top" alt="logo">
     </a>
     <!-- .navbar-toggler 漢堡式選單按鈕 -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <!-- 漢堡式選單Icon -->
       <span class="navbar-toggler-icon"></span>
@@ -38,34 +38,34 @@
     <!-- .collapse.navbar-collapse  -->
     <!-- 選單項目&漢堡式折疊選單 -->
     <div class="collapse navbar-collapse navbar-collapse-bg" id="navbarSupportedContent">
-        <div class="navbar-nav ml-auto">
-          <div class="nav-item col home-hover">
-            <a class="nav-link home-text1" href="/index.html">Home</a>
-            <a class="nav-link home-text2" href="/index.html">首 頁</a>
-          </div>
-          <!-- .dropdown menu -->
-          <div class="nav-item active dropdown col home-hover">
-            <a class="nav-link home-text1" href="/Project.html">Project</a>
-            <a class="nav-link home-text2" href="/Project.html">作 品</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/Project01.html">居所</a>
-              <a class="dropdown-item" href="/Project02.html">商空</a>
-              <a class="dropdown-item" href="/Project03.html">辦公</a>
-            </div>
-          </div>
-          <div class="nav-item col home-hover">
-            <a class="nav-link home-text1" href="/about.html">About</a>
-            <a class="nav-link home-text2" href="/about.html">關 於</a>
-          </div>
-        
+      <div class="navbar-nav ml-auto">
+        <div class="nav-item col home-hover">
+          <a class="nav-link home-text1" href="/index.html">Home</a>
+          <a class="nav-link home-text2" href="/index.html">首 頁</a>
         </div>
+        <!-- .dropdown menu -->
+        <div class="nav-item active dropdown col home-hover">
+          <a class="nav-link home-text1" >Project</a>
+          <a class="nav-link home-text2" >作 品</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="Project.html#project01">居所</a>
+            <a class="dropdown-item" href="Project.html#project02">商空</a>
+            <a class="dropdown-item" href="Project.html#project03">辦公</a>
+          </div>
+        </div>
+        <div class="nav-item col home-hover">
+          <a class="nav-link home-text1" href="/about.html">About</a>
+          <a class="nav-link home-text2" href="/about.html">關 於</a>
+        </div>
+
+      </div>
     </div>
   </nav>
 
   <main>
 
     <!-- Project 1 -->
-    <div class="projectBox">
+    <div id="project01" class="projectBox">
       <!-- Project title -->
       <div class="container py-5">
         <div class="row align-items-center no-gutters">
@@ -120,7 +120,7 @@
     </div>
 
     <!-- Project 2 -->
-    <div class="projectBox">
+    <div id="project02" class="projectBox">
       <!-- Project title -->
       <div class="container py-5">
         <div class="row align-items-center no-gutters">
@@ -149,7 +149,7 @@
           <div class="col-12 col-md-3">
             <t3>商 空</t3>
           </div>
-        <!-- Project Pics -->
+          <!-- Project Pics -->
           <div class="col-6 col-md-4 project2pics">
             <img src="image/400X250.png" class="img-thumbnail"></img>
           </div>
@@ -168,7 +168,7 @@
     </div>
 
     <!-- Project 3 -->
-    <div class="projectBox">
+    <div id="project03" class="projectBox">
       <!-- Project title -->
       <div class="container py-5">
         <div class="row align-items-center no-gutters">
@@ -223,14 +223,14 @@
     </div>
 
 
-    
+
     <button type="button" id="gotoTop" class="gotoTop">
       <img src="image/gotoTop_btn.png" width="40px;" height="70px;"></img>
     </button>
 
   </main>
 
-  
+
 
   <!-- Footer -->
   <footer class="footer" style="background-color: rgb(165, 156, 156); color:white;">
@@ -275,6 +275,21 @@
       }).scroll();
     });
 
+    /* navbar fixed top */
+    if ($(window).width() > 992) {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 40) {
+          $('#TopNavbar').addClass("fixed-top");
+          $('#TopNavbar').addClass("navbarMove");
+          $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+        } else {
+          $('#TopNavbar').removeClass("fixed-top");
+          $('#TopNavbar').removeClass("navbarMove");
+          // remove padding top from body
+          $('body').css('padding-top', '0');
+        }
+      });
+    }
   </script>
 
 

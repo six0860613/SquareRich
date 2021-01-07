@@ -2,11 +2,14 @@ html,body{
     height: 100%;
     font-family: "Consolas", "游ゴシック体", "sans-serif";
     font-size: 16px;
+    /* 圖片銳利化 */
     image-rendering:-moz-crisp-edges;   /* Firefox  */ 
     image-rendering:-o-crisp-edges;   /* Opera   */ 
     image-rendering:-webkit-optimize-contrast; /* Safari   */ 
     image-rendering:optimize-contrast;   /* CSS3 Proposed */ 
     -ms-interpolation-mode:nearest-neighbor; /* IE8+   */ 
+    /* 平滑滾動 */
+    scroll-behavior: smooth;
 }
 @media(max-width: 767px){
     html,body{
@@ -70,6 +73,7 @@ opacity: 1.0;
 
 .navbar{
     height: 15%;
+    min-height: 74px;
 }
 @media (max-width: 768px){
     .navbar{
@@ -77,8 +81,8 @@ opacity: 1.0;
     }
 }
 .navbarMove{
-    background-color: rgba(255, 255, 255, 0.8) !important;
-}
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}/* 滑動後變透明用 */
 
 .logo{
     max-width: 200px;
@@ -91,17 +95,35 @@ opacity: 1.0;
 
 @media (max-width: 767px) { 
      .navbar-collapse-bg{
-        background-color: rgba(99, 90, 90, 0.308);
+        background-color: rgba(99, 90, 90, 0.9);
         position: absolute;
         width: 120px;
-        right: 10px;
+        right: 13px;
         top: 105%;
         z-index: 5;
     }
     .home-text2{
         display:none;
     }
+    .nav-link{
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+    .nav-item{
+        font-family: "Cambria";
+        letter-spacing: 1px;
+    }
+    .dropdown-item{
+        color: rgba(255, 255, 255, 0.75) !important;
+        background-color: rgba(99, 90, 90, 0)!important;
+        padding-left: 0;
+    }
+    .dropdown-bg{
+        background-color: rgba(99, 90, 90, 0);
+        border: none;
+        padding-top: 0;
+    }
 }/* 摺疊選單背景 */
+
 
 .dropdown:hover .dropdown-menu{
     display: block;
@@ -110,8 +132,9 @@ opacity: 1.0;
 
 .dropdown-menu{
     min-width: 75px;
-    text-align: center;
+    text-align: start;
 }
+
 
 
 
@@ -159,13 +182,13 @@ opacity: 1.0;
 /* slideBox部分 */
 .slideBox{
     position: absolute;
-    width: 28%;
+    width: 33%;
     min-width: 120px;
     max-width: 300px;
-    height: 65%;
+    height: 70%;
     margin-left: 0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-top: 5%;
     z-index: 2;
     animation-name: fade-left;
@@ -180,8 +203,8 @@ opacity: 1.0;
         min-width: 130px;
         min-height: 170px;
         margin-top: 15%;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 27px;
+        padding-right: 27px;
     }
 }
 
@@ -200,23 +223,43 @@ opacity: 1.0;
     position: absolute;
 }
 .sbt01{
-    font-size: 1.2rem;
+    font-size: 0.875rem;
     font-weight: bold;
     padding: 0;
     font-family: "Cambria";
+    letter-spacing: 1.2px;
     color:rgb(65, 70, 85);
 }
 .sbt02{
-    font-size: 0.75rem;
+    vertical-align: top;
+    font-size: 0.5rem;
     padding: 0;
+    margin-right: 20px;
     font-family: "Cambria";
-    color:rgb(65, 70, 85);
+    letter-spacing: 0.5px;
+    color:rgb(139, 139, 139);
+    margin-top: -3px; 
+
+}
+.sbt02border {
+    position:relative;
+    left:0px;
+    width:85%;
+    border: transparent; 
+    border-bottom: gray 1px solid;
 }
 .sbt03{
     font-size: 0.8rem;
     padding: 0;
     font-family: "Cambria";
+    letter-spacing: 1px;
     color:rgb(65, 70, 85);
+    margin-top: 5px;
+}
+@media(max-width: 767px){
+    .sbt03{
+        font-size: 12px;
+    }
 }
 
 
@@ -229,7 +272,8 @@ opacity: 1.0;
     bottom: 0;
     width: 100%;
     height:10%;
-    color:rgb(70, 66, 66)
+    background-color: rgb(147, 149, 153);
+    color:white;
 }
 @media(max-width: 767px){
     .footer{
@@ -239,34 +283,37 @@ opacity: 1.0;
 
 
 .bg-2{
-    font-size: 1.5rem;
-    /*background-color: green;*/
+    font-size: 1.1rem;
     display: none;
     padding: 0;
+    letter-spacing: 3px;
+    font-family: "游ゴシック体";
+    margin-top: 40px;
 }
 .bg-3{
     font-size: 0.75rem;
     letter-spacing: 2px;
     padding: 0;
-    /*background-color: red;*/
+    display: none;
+    margin-top: 10px;
 }
 .bg-4{
     font-size: 0.75rem;
     letter-spacing: 2px;
     padding: 0;
-    /*background-color: yellowgreen;*/
+    font-family: "Consolas", "游ゴシック体";
 }
 .bg-5{
     font-size: 0.75rem;
     letter-spacing: 2px;
     padding: 0;
-    /*background-color: blue;*/
+    display: none;
 }
 .bg-6{
     font-size: 0.75rem;
     letter-spacing: 2px;
     padding: 0;
-    /*background-color: blue;*/
+    display: none;
 }
 
 .footer-content{
@@ -285,7 +332,7 @@ opacity: 1.0;
         display: inline-block;
     }
     .bg-5{
-        bottom: 20px;
+        bottom: 10px;
     }
 }
 
@@ -314,8 +361,16 @@ t5{
 .forcefontsize8 {
     display: inline-block;
     font-size: 12px;
+    transform-origin: left;
     -webkit-text-size-adjust:none;
     -webkit-transform : scale(0.66,0.66);
+}
+.forcefontsize10 {
+    display: inline-block;
+    font-size: 12px;
+    transform-origin: left;
+    -webkit-text-size-adjust:none;
+    -webkit-transform : scale(0.75,0.75);
 }
 
 
@@ -359,6 +414,14 @@ t5{
 	bottom: 11%;
     display: none;    
     z-index: 5;
+}
+
+.gotoProject {
+    position: relative;
+    top: -44px;
+    display: block;
+    height: 0;
+    overflow: hidden;
 }
 
 /* Project01 Page */

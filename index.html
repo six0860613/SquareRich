@@ -26,7 +26,7 @@
 
     <!-- .navbar-brand 左上LOGO位置 -->
     <a class="navbar-brand" href="index.html">
-      <img src="image/index_logo.jpg" class="logo d-inline-block align-top" alt="logo">
+      <img src="image/index_logo_mini.png" class="logo d-inline-block align-top" alt="logo">
     </a>
     <!-- .navbar-toggler 漢堡式選單按鈕 -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -45,9 +45,9 @@
         </div>
         <!-- .dropdown menu -->
         <div class="nav-item dropdown col home-hover">
-          <a class="nav-link home-text1" >Project</a>
-          <a class="nav-link home-text2" >作 品</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="nav-link home-text1">Project</a>
+          <a class="nav-link home-text2">作 品</a>
+          <div class="dropdown-menu dropdown-bg" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="Project.html#project01">居所</a>
             <a class="dropdown-item" href="Project.html#project02">商空</a>
             <a class="dropdown-item" href="Project.html#project03">辦公</a>
@@ -70,12 +70,15 @@
     <div class="container slideBox">
       <div class="row text-left" style="padding-top: 20%; padding-left: 10%; padding-right: 10%;">
         <div class="col-12 sbt01">Main services</div>
-        <div class="col-12 sbt02" style="border: transparent; border-bottom: gray 1px solid;"><t5 class="forcefontsize10" style="transform-origin: bottom left;">服務內容</t5></div>
+        <div class="col-12 sbt02">
+          <t5 class="forcefontsize10">服務內容</t5>
+          <div class="sbt02border"></div>
+        </div>
         <div class="col-12 sbt03" style="margin-top: 16px;">Interior design & decoration</div>
         <div class="col-12 sbt03">Dwelling</div>
         <div class="col-12 sbt03">Commercial</div>
         <div class="col-12 sbt03">Office</div>
-        <div class="col-12 sbt03" style="margin-top: 16px;">Construction planning</div>
+        <div class="col-12 sbt03" style="margin-top: 32px;">Construction planning</div>
       </div>
     </div>
 
@@ -99,19 +102,24 @@
 
     </div>
 
-    
+
 
   </header>
-  
+
   <!-- Footer -->
-  <footer class="footer" style="background-color: rgb(165, 156, 156); color:white;">
+  <footer class="footer">
     <div class="container footer-content">
       <div class="row h-100 align-items-end">
+        <div class="col-md-12 bg-4">
+          T<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6577&emsp;&emsp;
+          P<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6576&emsp;&emsp;
+          M<t5 class="forcefontsize8">&ensp;|</t5>sr50795118@gmail.com&emsp;&emsp;
+          新北市新店區中正路54巷24號5樓
+        </div>
+        <!-- mobile -->
         <div class="col-12 col-md-3 bg-2">矩沛室內裝修工程有限公司</div>
-        <div class="col-12 col-md-3 bg-3">T<t5 class="forcefontsize10"> | </t5>02 2911-6577</div>
-        <div class="col col-md-3 bg-4">P<t5 class="forcefontsize10"> | </t5>02 2911-6576</div>
-        <div class="col-12 col-md-3 bg-5">M<t5 class="forcefontsize10"> | </t5>sr50795118@gmail.com</div>
-        <div class="col col-md-3 bg-6">新北市新店區中正路54巷24號5樓</div>
+        <div class="col-12 col-md-2 offset-md-2 bg-3">T<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6577</div>
+        <div class="col-12 col-md-2 bg-5">M<t5 class="forcefontsize8">&ensp;|</t5>sr50795118@gmail.com</div>
       </div>
     </div>
   </footer>
@@ -122,16 +130,16 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
     /* dropdown-menu觸發由click改為hover */
-    $(document).ready(function(){
-        $(".dropdown").hover(function(){
-            var dropdownMenu = $(this).children(".dropdown-menu");
-            if(dropdownMenu.is(":visible")){
-                dropdownMenu.parent().toggleClass("open");
-            }
-        });
+    $(document).ready(function () {
+      $(".dropdown").hover(function () {
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if (dropdownMenu.is(":visible")) {
+          dropdownMenu.parent().toggleClass("open");
+        }
+      });
     });
 
-    </script>
+  </script>
 
 
 </body>

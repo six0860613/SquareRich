@@ -206,28 +206,32 @@
 
   <script>
     /* dropdown-menu觸發由click改為hover */
-    $(document).ready(function () {
-      $(".dropdown").hover(function () {
-        var dropdownMenu = $(this).children(".dropdown-menu");
-        if (dropdownMenu.is(":visible")) {
-          dropdownMenu.parent().toggleClass("open");
-        }
+    if ($(window).width() > 767) {
+      $(document).ready(function () {
+        $(".dropdown").hover(function () {
+          var dropdownMenu = $(this).children(".dropdown-menu");
+          if (dropdownMenu.is(":visible")) {
+            dropdownMenu.parent().toggleClass("open");
+          }
+        });
       });
-    });
+    }
 
     /* gotoTop button */
-    $(function () {
-      $('#gotoTop').click(function () {
-        $('html,body').animate({ scrollTop: 0 }, 333);
+    if ($(window).width() > 767) {
+      $(function () {
+        $('#gotoTop').click(function () {
+          $('html,body').animate({ scrollTop: 0 }, 333);
+        });
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $('#gotoTop').fadeIn(222);
+          } else {
+            $('#gotoTop').stop().fadeOut(222);
+          }
+        }).scroll();
       });
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-          $('#gotoTop').fadeIn(222);
-        } else {
-          $('#gotoTop').stop().fadeOut(222);
-        }
-      }).scroll();
-    });
+    }
 
     /* navbar fixed top */
     if ($(window).width() > 100) {

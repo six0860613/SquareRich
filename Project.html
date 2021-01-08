@@ -40,8 +40,8 @@
     <div class="collapse navbar-collapse navbar-collapse-bg" id="navbarSupportedContent">
       <div class="navbar-nav active ml-auto">
         <div class="nav-item col home-hover">
-          <a class="nav-link home-text1" href="/index.html">Home</a>
-          <a class="nav-link home-text2" href="/index.html">首 頁</a>
+          <a class="nav-link home-text1" href="index.html">Home</a>
+          <a class="nav-link home-text2" href="index.html">首 頁</a>
         </div>
         <!-- .dropdown menu -->
         <div class="nav-item dropdown col home-hover">
@@ -54,8 +54,8 @@
           </div>
         </div>
         <div class="nav-item col home-hover">
-          <a class="nav-link home-text1" href="/about.html">About</a>
-          <a class="nav-link home-text2" href="/about.html">關 於</a>
+          <a class="nav-link home-text1" href="about.html">About</a>
+          <a class="nav-link home-text2" href="about.html">關 於</a>
         </div>
 
       </div>
@@ -240,9 +240,9 @@
     <div class="container footer-content">
       <div class="row h-100 align-items-end">
         <div class="col-md-8 offset-md-2 bg-4">
-          T<t5 class="forcefontsize8"> | </t5>02 2911-6577 
-          P<t5 class="forcefontsize8"> | </t5>02 2911-6576 
-          M<t5 class="forcefontsize8"> | </t5>sr50795118@gmail.com 
+          T<t5 class="forcefontsize8"> | </t5>02 2911-6577
+          P<t5 class="forcefontsize8"> | </t5>02 2911-6576
+          M<t5 class="forcefontsize8"> | </t5>sr50795118@gmail.com
           新北市新店區中正路54巷24號5樓
         </div>
         <!-- mobile -->
@@ -259,29 +259,23 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    /* dropdown-menu觸發由click改為hover */
-    $(document).ready(function () {
-      $(".dropdown").hover(function () {
-        var dropdownMenu = $(this).children(".dropdown-menu");
-        if (dropdownMenu.is(":visible")) {
-          dropdownMenu.parent().toggleClass("open");
-        }
-      });
-    });
+
 
     /* gotoTop button */
-    $(function () {
-      $('#gotoTop').click(function () {
-        $('html,body').animate({ scrollTop: 0 }, 333);
+    if ($(window).width() > 767) {
+      $(function () {
+        $('#gotoTop').click(function () {
+          $('html,body').animate({ scrollTop: 0 }, 333);
+        });
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $('#gotoTop').fadeIn(222);
+          } else {
+            $('#gotoTop').stop().fadeOut(222);
+          }
+        }).scroll();
       });
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-          $('#gotoTop').fadeIn(222);
-        } else {
-          $('#gotoTop').stop().fadeOut(222);
-        }
-      }).scroll();
-    });
+    }
 
     /* navbar fixed top */
     if ($(window).width() > 100) {

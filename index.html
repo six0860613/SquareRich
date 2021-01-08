@@ -40,8 +40,8 @@
     <div class="collapse navbar-collapse navbar-collapse-bg" id="navbarSupportedContent">
       <div class="navbar-nav active ml-auto">
         <div class="nav-item col home-hover">
-          <a class="nav-link home-text1" href="/index.html">Home</a>
-          <a class="nav-link home-text2" href="/index.html">首 頁</a>
+          <a class="nav-link home-text1" href="index.html">Home</a>
+          <a class="nav-link home-text2" href="index.html">首 頁</a>
         </div>
         <!-- .dropdown menu -->
         <div class="nav-item dropdown col home-hover">
@@ -54,8 +54,8 @@
           </div>
         </div>
         <div class="nav-item col home-hover">
-          <a class="nav-link home-text1" href="/about.html">About</a>
-          <a class="nav-link home-text2" href="/about.html">關 於</a>
+          <a class="nav-link home-text1" href="about.html">About</a>
+          <a class="nav-link home-text2" href="about.html">關 於</a>
         </div>
 
       </div>
@@ -129,15 +129,6 @@
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
-    /* dropdown-menu觸發由click改為hover */
-    $(document).ready(function () {
-      $(".dropdown").hover(function () {
-        var dropdownMenu = $(this).children(".dropdown-menu");
-        if (dropdownMenu.is(":visible")) {
-          dropdownMenu.parent().toggleClass("open");
-        }
-      });
-    });
 
   </script>
 

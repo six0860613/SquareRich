@@ -95,7 +95,7 @@ opacity: 1.0;
 
 @media (max-width: 767px) { 
      .navbar-collapse-bg{
-        background-color: rgba(99, 90, 90, 0.9);
+        background-color: rgba(0, 0, 0, 0.9);
         position: absolute;
         width: 120px;
         right: 13px;
@@ -114,11 +114,11 @@ opacity: 1.0;
     }
     .dropdown-item{
         color: rgba(255, 255, 255, 0.75) !important;
-        background-color: rgba(99, 90, 90, 0)!important;
+        background-color: rgba(0, 0, 0, 0)!important;
         padding-left: 0;
     }
     .dropdown-bg{
-        background-color: rgba(99, 90, 90, 0);
+        background-color: rgba(0, 0, 0, 0);
         border: none;
         padding-top: 0;
     }
@@ -414,6 +414,7 @@ t5{
 	bottom: 11%;
     display: none;    
     z-index: 5;
+    background-color: transparent;
 }
 
 .gotoProject {

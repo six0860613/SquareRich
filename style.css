@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'webConsolas';
-    src: url('./font/Consolas/Consolas.eot'); /* IE9 Compat Modes */
-    src: url('./font/Consolas/Consolas.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
-    src: url('./font/Consolas/Consolas.woff') format('woff'); /* Modern Browsers */
-    src: url('./font/Consolas/Consolas.tff') format('truetype'); /* Safari, Android, iOS */
+    src: url('./font/Consolas/Consolas.eot'), /* IE9 Compat Modes */
+    src: url('./font/Consolas/Consolas.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    src: url('./font/Consolas/Consolas.woff') format('woff'), /* Modern Browsers */
+    src: url('./font/Consolas/Consolas.tff') format('truetype'), /* Safari, Android, iOS */
     src: url('./font/Consolas/Consolas.svg#webConsolas') format('svg'); /* Legacy iOS */
     font-weight: normal; 
     font-style: normal; 
 }
 @font-face {
     font-family: 'webCambria';
-    src: url('./font/Cambria/Cambria.eot'); /* IE9 Compat Modes */
-    src: url('./font/Cambria/Cambria.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
-    src: url('./font/Cambria/Cambria.woff') format('woff'); /* Modern Browsers */
-    src: url('./font/Cambria/Cambria.tff') format('truetype'); /* Safari, Android, iOS */
+    src: url('./font/Cambria/Cambria.eot'), /* IE9 Compat Modes */
+    src: url('./font/Cambria/Cambria.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    src: url('./font/Cambria/Cambria.woff') format('woff'), /* Modern Browsers */
+    src: url('./font/Cambria/Cambria.tff') format('truetype'), /* Safari, Android, iOS */
     src: url('./font/Cambria/Cambria.svg#webCambria') format('svg'); /* Legacy iOS */
     font-weight: normal; 
     font-style: normal; 

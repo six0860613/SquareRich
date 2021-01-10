@@ -19,20 +19,20 @@ html,body{
 @font-face {
     font-family: 'Consolas';
     src: url('../font/Consolas/Consolas.eot'); /* IE9 Compat Modes */
-    src: url('../font/Consolas/Consolas.eot?#iefix') format("embedded-opentype"), /* IE6-IE8 */
-         url('../font/Consolas/Consolas.woff') format("woff"), /* Modern Browsers */
-         url('../font/Consolas/Consolas.tff') format("truetype"), /* Safari, Android, iOS */
-         url('../font/Consolas/Consolas.svg#Consolas') format("svg"); /* Legacy iOS */
+    src: url('../font/Consolas/Consolas.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+    src: url('../font/Consolas/Consolas.woff') format('woff'); /* Modern Browsers */
+    src: url('../font/Consolas/Consolas.tff') format('truetype'); /* Safari, Android, iOS */
+    src: url('../font/Consolas/Consolas.svg#Consolas') format('svg'); /* Legacy iOS */
     font-weight: normal; 
     font-style: normal; 
 }
 @font-face {
     font-family: 'Cambria';
     src: url('../font/Cambria/Cambria.eot'); /* IE9 Compat Modes */
-    src: url('../font/Cambria/Cambria.eot?#iefix') format("embedded-opentype"), /* IE6-IE8 */
-         url('../font/Cambria/Cambria.woff') format("woff"), /* Modern Browsers */
-         url('../font/Cambria/Cambria.tff') format("truetype"), /* Safari, Android, iOS */
-         url('../font/Cambria/Cambria.svg#Cambria') format("svg"); /* Legacy iOS */
+    src: url('../font/Cambria/Cambria.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+    src: url('../font/Cambria/Cambria.woff') format('woff'); /* Modern Browsers */
+    src: url('../font/Cambria/Cambria.tff') format('truetype'); /* Safari, Android, iOS */
+    src: url('../font/Cambria/Cambria.svg#Cambria') format('svg'); /* Legacy iOS */
     font-weight: normal; 
     font-style: normal; 
 }
@@ -229,7 +229,7 @@ opacity: 1.0;
         width: 45%;
         height: 40%;
         min-width: 130px;
-        min-height: 200px;
+        min-height: 300px;
         margin-top: 15%;
         padding-left: 27px;
         padding-right: 27px;

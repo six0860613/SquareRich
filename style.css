@@ -367,13 +367,34 @@ opacity: 1.0;
 /* Project Page */
 
 t1{
-    font-size: 5vmin; font-family: 'Cambria';
+    font-size: 2.5rem; 
+    font-family: 'Cambria';
+    font-weight: bold;
 }
 t2{
-    font-size: 1.0rem;
+    font-size: 1.0rem; 
+    font-family: 'Consolas';
+    letter-spacing: 7px;
+    color: rgb(163, 163, 163);
 }
-t3{
+t3a{
     font-size: 1.0rem;
+    font-family: 'Consolas';
+    letter-spacing: 6px;
+    font-weight: bold; 
+    color:rgb(112, 102, 95);
+}
+t3b{
+    font-size: 1.0rem;
+    font-family: 'Consolas';
+    letter-spacing: 6px;
+    color: rgb(129, 129, 129);
+}
+t3c{
+    font-size: 1.0rem;
+    font-family: '游ゴシック体';
+    letter-spacing: 6px;
+    color: rgb(129, 129, 129);
 } 
 t4{
     font-size: 1.5rem;
@@ -413,20 +434,49 @@ t5{
     }
 }
 
-
 .proBorder{
     width: 100%;
     border: transparent;
-    border-top: gray;
-    border-style: solid;
+    border-top: rgb(163, 163, 163) 1px solid;
 }
 
-.project2pics{
-    margin-top: 15px;
+.projectTitleA{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding-left: 1.3rem;
 }
+.proDetail{
+    margin-bottom: 4rem;
+}
+.proDetailText{
+    margin-bottom: 0.3rem;
+    padding-left: 1.5rem;
+    transform-origin: left;
+    -webkit-text-size-adjust:none;
+    -webkit-transform : scale(0.9,0.9);
+}
+.proPicBox{
+
+}
+.proPic{
+    padding: 0;
+    border: rgb(163, 163, 163, 0) 0.2rem solid;
+}
+@media(max-width: 768px){
+    .projectTitleA, .proDetail, .proPicBox{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    t1{font-size: 2.0rem;}
+    .projectTitleB{
+        display: none;
+    }
+}
+
+
 @media(min-width: 768px){
     .project2pics{
-        top: -50px; 
+        top: -60px; 
         vertical-align: top;
     }
 }
@@ -447,7 +497,7 @@ t5{
 
 .gotoProject {
     position: relative;
-    top: -44px;
+    top: -80px;
     display: block;
     height: 0;
     overflow: hidden;
@@ -459,16 +509,16 @@ t5{
     justify-self: center;
     font-size: 5rem;
 }
-.projectDetai{
+.projectDetail{
     padding: 0px;
     height: 250px;
 }
-.projectDetaiText{
+.projectDetailText{
     height: 250px;
     display: inline-block;
     background-color: rgb(209, 199, 199);
 }
-.projectDetaiFBIG{
+.projectDetailFBIG{
     margin: 0; 
     margin-top: 20px; 
     display: inline-block; 

@@ -468,8 +468,8 @@ t5{
 }
 @media(max-width: 768px){
     .projectTitleA, .proDetail, .proPicBox{
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 28px;
+        padding-right: 28px;
     }
     t1{font-size: 2.0rem;}
     .projectTitleB{

@@ -109,8 +109,11 @@ opacity: 1.0;
     background-image: url('image/navbar-toggler.png');
 }/* 漢堡圖示樣式 */
 
+.nabar-bg{
+    background-color: rgb(240, 240, 240) !important;
+}/* nabar背景 */
 .navbarMove{
-    background-color: rgba(255, 255, 255, 0.9) !important;
+    background-color: rgba(240, 240, 240, 0.9) !important;
 }/* 滑動後變透明用 */
 
 .logo{

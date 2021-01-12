@@ -36,6 +36,9 @@ html,body{
         font-size: 12px;
     }
 }
+button:focus{ 
+    outline:0 !important; 
+} 
 
 .navbar-top{
     position: sticky;
@@ -188,6 +191,7 @@ opacity: 1.0;
         position: relative;
         height: 40px;
         padding: 0;
+        cursor: pointer;
     }
     .home-text1{
         top: 0;
@@ -447,29 +451,46 @@ t5{
 .projectTitleA{
     margin-top: 8rem;
     margin-bottom: 4rem;
-    padding-left: 1.3rem;
+    padding-left: 0.1rem;
 }
 .proDetail{
     margin-bottom: 4rem;
 }
 .proDetailText{
     margin-bottom: 0.3rem;
-    padding-left: 1.5rem;
+    padding-left: 0.2rem;
     transform-origin: left;
     -webkit-text-size-adjust:none;
     -webkit-transform : scale(0.9,0.9);
 }
-.proPicBox{
-
+.proDetailText2{
+    padding-left: 3px;
+    padding-right: 3px;
+    transform-origin: left;
+    -webkit-text-size-adjust:none;
+    -webkit-transform : scale(0.9,0.9);
 }
+
 .proPic{
     padding: 0;
     border: rgb(163, 163, 163, 0) 0.2rem solid;
 }
 @media(max-width: 768px){
-    .projectTitleA, .proDetail, .proPicBox{
-        padding-left: 28px;
-        padding-right: 28px;
+    .projectTitleA {
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+    .proDetail{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .proDetailText2{
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+    .proPicBox{
+        padding-left: 25px;
+        padding-right: 25px;
     }
     t1{font-size: 2.0rem;}
     .projectTitleB{

@@ -18,9 +18,19 @@
     font-weight: normal; 
     font-style: normal; 
 }
+@font-face {
+    font-family: 'yugothic';
+    src: url('./font/yugothic/yugothic.eot'), /* IE9 Compat Modes */
+         url('./font/yugothic/yugothic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./font/yugothic/yugothic.woff') format('woff'), /* Modern Browsers */
+         url('./font/yugothic/yugothic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./font/yugothic/yugothic.svg#yugothic') format('svg'); /* Legacy iOS */
+    font-weight: normal; 
+    font-style: normal; 
+}
 html,body{
     height: 100%;
-    font-family: 'Cambria', 'Consolas', '游ゴシック体', sans-serif;
+    font-family: 'Cambria', 'Consolas', 'yugothic', sans-serif;
     font-size: 16px;
     /* 圖片銳利化 */
     image-rendering:-moz-crisp-edges;   /* Firefox  */ 
@@ -323,7 +333,7 @@ opacity: 1.0;
     display: none;
     padding: 0;
     letter-spacing: 3px;
-    font-family: '游ゴシック体';
+    font-family: 'yugothic';
     margin-top: 40px;
 }
 .bg-3{
@@ -337,7 +347,7 @@ opacity: 1.0;
     font-size: 0.75rem;
     letter-spacing: 2px;
     padding: 0;
-    font-family: 'Consolas', '游ゴシック体';
+    font-family: 'yugothic', 'Consolas';
 }
 .bg-5{
     font-size: 0.75rem;
@@ -400,7 +410,7 @@ t3b{
 }
 t3c{
     font-size: 1.0rem;
-    font-family: '游ゴシック体';
+    font-family: 'yugothic';
     letter-spacing: 6px;
     color: rgb(129, 129, 129);
 } 
@@ -577,5 +587,5 @@ t5{
 }
 
 .aboutT1{
-    
+
 }

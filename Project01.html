@@ -14,7 +14,7 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  <link href="index_slide.css" rel="stylesheet">
+  <link href="project_slide.css" rel="stylesheet">
 
 </head>
 
@@ -22,7 +22,7 @@
   <!-- Navigation -->
   <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
   <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
-  <nav id="TopNavbar" class="navbar navbar-expand-md navbar-light nabar-bg">
+  <nav id="TopNavbar" class="navbar navbar-expand-md navbar-light" style="background-color: white;">
 
     <!-- .navbar-brand 左上LOGO位置 -->
     <a class="navbar-brand" href="index.html">
@@ -129,7 +129,7 @@
     <div class="container">
       <div class="row text-center justify-content-center">
         <div class="col-8 pSlcikPicsText">
-          <t2>Other Projects 其他作品</t2>
+          <t5>Other Projects 其他作品</t5>
         </div>
         <div class="w-100"></div>
         <div class="col-8 pSlcikPics">
@@ -217,21 +217,6 @@
       });
     }
 
-    /* gotoTop button */
-    if ($(window).width() > 767) {
-      $(function () {
-        $('#gotoTop').click(function () {
-          $('html,body').animate({ scrollTop: 0 }, 333);
-        });
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 300) {
-            $('#gotoTop').fadeIn(222);
-          } else {
-            $('#gotoTop').stop().fadeOut(222);
-          }
-        }).scroll();
-      });
-    }
 
     /* navbar fixed top */
     if ($(window).width() > 100) {

@@ -598,6 +598,11 @@ t5{
     margin-top: 17%;
     padding-left: 1%;
 }
+@media(max-width: 768px){
+    .aboutTopPic{
+        padding-left: 5%;
+    }
+}
 .aboutTop-bg{
     position: absolute;
     background-color: rgb(219, 219, 219);
@@ -642,7 +647,7 @@ t5{
     padding-right: 0;
 }
 .aboutBotTitleC{
-    padding-left: 2%;
+    padding-left: 3%;
 }
 @media(max-width: 768px){
     .aboutBotTitleC{
@@ -653,10 +658,16 @@ t5{
 .aboutBotContentL{
     margin-bottom: 10px; 
     padding: 2%;
+
 }
 .aboutBotContentR{
     margin-bottom: 10px; 
     padding: 2%;
+}
+@media(max-width: 768px){
+    .aboutBotContentL{
+        padding-left: 5%;
+    }   
 }
 
 aboutT1{
@@ -707,12 +718,15 @@ aboutT3{
     font-size: 1.3rem; 
     font-family: 'Cambria';
     font-weight: bold;
+    color: rgb(129, 129, 129);
 }
 aboutT3a{
     font-size: 1.0rem; 
     font-family: 'Cambria';
+    color: rgb(129, 129, 129);
 }
 aboutT3b{
-    font-size: 1.0rem; 
-    font-family: 'Cambria', 'yugothic';
+    font-size: 0.7rem; 
+    font-family: 'yugothic';
+    color: rgb(129, 129, 129);
 }

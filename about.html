@@ -74,7 +74,7 @@
           </div>
           <div class="col-6 col-md-6 text-left no-gutters" style="position: absolute; display:inline-block;">
             <div class="col-12">
-              <t4>SQUARE RICH</t4>
+              <aboutT1>SQUARE RICH</aboutT1>
             </div>
             <div class="col-12">
               <t2>Interior Design&</t2>
@@ -164,9 +164,9 @@
     <div class="container footer-content">
       <div class="row h-100 align-items-end">
         <div class="col-md-8 offset-md-2 bg-4">
-          T<t5 class="forcefontsize8"> | </t5>02 2911-6577 
-          P<t5 class="forcefontsize8"> | </t5>02 2911-6576 
-          M<t5 class="forcefontsize8"> | </t5>sr50795118@gmail.com 
+          T<t5 class="forcefontsize8"> | </t5>02 2911-6577
+          P<t5 class="forcefontsize8"> | </t5>02 2911-6576
+          M<t5 class="forcefontsize8"> | </t5>sr50795118@gmail.com
           新北市新店區中正路54巷24號5樓
         </div>
         <!-- mobile -->
@@ -196,6 +196,19 @@
           // remove padding top from body
           $('body').css('padding-top', '0');
         }
+      });
+    }
+
+    /* 按body時收起navbar-collapse */
+    if ($(window).width() < 768) {
+      $(document).ready(function () {
+        $(document).click(function (event) {
+          var clickover = $(event.target);
+          var _opened = $(".navbar-collapse").hasClass("show");
+          if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+          }
+        });
       });
     }
 

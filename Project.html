@@ -29,8 +29,9 @@
       <img src="image/index_logo_mini.png" class="logo d-inline-block align-top" alt="logo">
     </a>
     <!-- .navbar-toggler 漢堡式選單按鈕 -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
       <!-- 漢堡式選單Icon -->
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -281,6 +282,20 @@
         }
       });
     }
+
+    /* 按body時收起navbar-collapse */
+    if ($(window).width() < 768) {
+      $(document).ready(function () {
+        $(document).click(function (event) {
+          var clickover = $(event.target);
+          var _opened = $(".navbar-collapse").hasClass("show");
+          if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+          }
+        });
+      });
+    }
+
 
   </script>
 

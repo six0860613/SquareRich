@@ -404,6 +404,7 @@ t3c{
     letter-spacing: 6px;
     color: rgb(129, 129, 129);
 } 
+/* footer text */
 t4{
     font-size: 1.5rem;
 }
@@ -573,4 +574,8 @@ t5{
     .aboutTop{
         height: 200px;
     }
+}
+
+.aboutT1{
+    
 }

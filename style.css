@@ -617,9 +617,22 @@ t5{
         height: 200px;
     }
 }
-
-
-
+.aboutBotTitle{
+    margin-bottom: 0px; 
+    padding-left: 2%;
+    padding-right: 0;
+}
+.aboutBotTitleC{
+    padding-left: 2%;
+}
+.aboutBotContentL{
+    margin-bottom: 10px; 
+    padding: 2%;
+}
+.aboutBotContentR{
+    margin-bottom: 10px; 
+    padding: 0px;
+}
 
 aboutT1{
     font-size: 2.0rem; 
@@ -627,17 +640,29 @@ aboutT1{
     font-weight: bold;
     letter-spacing: 5px;
 }
-@media(max-width: 768px){
-    aboutT1{
-        font-size: 1.4rem; 
-    }
-}
 aboutT1a{
-    font-size: 1.0rem; 
+    font-size: 0.9rem; 
     font-family: 'Consolas';
     letter-spacing: 2px;
     color: rgb(129, 129, 129);
 }
+@media(max-width: 768px){
+    aboutT1{
+        font-size: 1.1rem; 
+    }
+    aboutT1a{
+        font-size: 1.0rem; 
+    }
+    .forcefontsize8-m {
+        display: inline-block;
+        font-size: 12px;
+        transform-origin: left;
+        -webkit-text-size-adjust:none;
+        -webkit-transform : scale(0.66,0.66);
+    }
+}
+
+
 aboutT2{
     font-size: 2.0rem; 
     font-family: 'Cambria';
@@ -651,4 +676,17 @@ aboutT2b{
 aboutT2b{
     font-size: 1.0rem; 
     font-family: 'yugothic';
+}
+aboutT3{
+    font-size: 1.3rem; 
+    font-family: 'Cambria';
+    font-weight: bold;
+}
+aboutT3a{
+    font-size: 1.0rem; 
+    font-family: 'Cambria';
+}
+aboutT3b{
+    font-size: 1.0rem; 
+    font-family: 'Cambria', 'yugothic';
 }

@@ -601,7 +601,7 @@ t5{
 }
 .aboutTop-bg-2-square{
     background-color: white;
-    width: 30%;
+    width: 40%;
     max-width: 350px;
     max-height: 350px;
 }
@@ -625,13 +625,19 @@ t5{
 .aboutBotTitleC{
     padding-left: 2%;
 }
+@media(max-width: 768px){
+    .aboutBotTitleC{
+        padding-left: 0;
+        padding-top: 2%;
+    }   
+}
 .aboutBotContentL{
     margin-bottom: 10px; 
     padding: 2%;
 }
 .aboutBotContentR{
     margin-bottom: 10px; 
-    padding: 0px;
+    padding: 2%;
 }
 
 aboutT1{
@@ -655,7 +661,6 @@ aboutT1a{
     }
     .forcefontsize8-m {
         display: inline-block;
-        font-size: 12px;
         transform-origin: left;
         -webkit-text-size-adjust:none;
         -webkit-transform : scale(0.66,0.66);

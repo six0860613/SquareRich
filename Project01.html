@@ -217,6 +217,21 @@
       });
     }
 
+    /* gotoTop button */
+    if ($(window).width() > 767) {
+      $(function () {
+        /*$('#gotoTop').click(function () {
+          $('html,body').animate({ scrollTop: 0 }, 100);
+        });*/
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $('#gotoTop').fadeIn(222);
+          } else {
+            $('#gotoTop').stop().fadeOut(222);
+          }
+        }).scroll();
+      });
+    }
 
     /* navbar fixed top */
     if ($(window).width() > 100) {

@@ -486,6 +486,9 @@ t5{
     padding: 0;
     border: rgb(163, 163, 163, 0) 0.2rem solid;
 }
+.proPic:hover{
+    opacity: 0.6;
+}
 @media(max-width: 768px){
     .projectTitleA {
         padding-left: 27px;

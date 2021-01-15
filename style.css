@@ -229,7 +229,7 @@ opacity: 1.0;
 .slideBox{
     position: absolute;
     width: 17%;
-    height: 52%;
+    height: 60%;
     min-width: 200px;
     margin-left: 0;
     padding-left: 32px;
@@ -576,15 +576,79 @@ t5{
 
 /* About Page */
 .aboutTop{
-    height: 400px; 
-    background-color: rgb(209, 199, 199);
+    position: relative;
+    height: 500px; 
+    z-index: 5;
+}
+.aboutTop-bg{
+    position: absolute;
+    background-color: rgb(216, 217, 213);
+    height: 500px; 
+    z-index: 1;
+}
+.aboutTop-bg-1{
+    height: 15%;
+    /*background-color: rgb(253, 128, 128);*/
+}
+.aboutTop-bg-2{
+    height: 70%;
+    /*background-color: rgb(128, 253, 159);*/
+}
+.aboutTop-bg-2-m{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+.aboutTop-bg-2-square{
+    background-color: white;
+    width: 30%;
+    max-width: 350px;
+    max-height: 350px;
+}
+.aboutTop-bg-3{
+    height: 15%;
+    /*background-color: rgb(136, 128, 253);*/
 }
 @media(max-width: 768px){
     .aboutTop{
         height: 200px;
     }
+    .aboutTop-bg{
+        height: 200px;
+    }
 }
 
-.aboutT1{
 
+
+
+aboutT1{
+    font-size: 2.0rem; 
+    font-family: 'Cambria';
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+@media(max-width: 768px){
+    aboutT1{
+        font-size: 1.4rem; 
+    }
+}
+aboutT1a{
+    font-size: 1.0rem; 
+    font-family: 'Consolas';
+    letter-spacing: 2px;
+    color: rgb(129, 129, 129);
+}
+aboutT2{
+    font-size: 2.0rem; 
+    font-family: 'Cambria';
+    font-weight: bold;
+    letter-spacing: 1.7rem;
+}
+aboutT2b{
+    font-size: 1.0rem; 
+    font-family: 'Cambria';
+}
+aboutT2b{
+    font-size: 1.0rem; 
+    font-family: 'yugothic';
 }

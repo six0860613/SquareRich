@@ -228,10 +228,9 @@ opacity: 1.0;
 /* slideBox部分 */
 .slideBox{
     position: absolute;
-    width: 20%;
-    height: 65%;
-    min-width: 120px;
-    min-height: 300px;
+    width: 17%;
+    height: 52%;
+    min-width: 200px;
     margin-left: 0;
     padding-left: 32px;
     padding-right: 32px;

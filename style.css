@@ -506,7 +506,9 @@ t5{
         padding-left: 25px;
         padding-right: 25px;
     }
-    t1{font-size: 2.0rem;}
+    t1{
+        font-size: 2.0rem;
+    }
     .projectTitleB{
         display: none;
     }
@@ -581,13 +583,25 @@ t5{
 /* About Page */
 .aboutTop{
     position: relative;
-    height: 500px; 
+    height: 650px; 
     z-index: 3;
+}
+.aboutTopPic{
+    position: relative;  
+    padding-left: 15%; 
+    margin-top: 15%;
+    text-align: center;
+}
+.aboutTopText{
+    position: relative; 
+    padding: 0; 
+    margin-top: 17%;
+    padding-left: 3%;
 }
 .aboutTop-bg{
     position: absolute;
-    background-color: rgb(216, 217, 213);
-    height: 500px; 
+    background-color: rgb(219, 219, 219);
+    height: 650px; 
     z-index: 1;
 }
 .aboutTop-bg-1{
@@ -606,8 +620,9 @@ t5{
 .aboutTop-bg-2-square{
     background-color: white;
     width: 40%;
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: -3%;
 }
 .aboutTop-bg-3{
     height: 15%;
@@ -648,20 +663,22 @@ aboutT1{
     font-size: 2.0rem; 
     font-family: 'Cambria';
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
 }
 aboutT1a{
-    font-size: 0.9rem; 
+    font-size: 1.1rem; 
     font-family: 'Consolas';
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     color: rgb(129, 129, 129);
 }
 @media(max-width: 768px){
     aboutT1{
         font-size: 1.1rem; 
+        letter-spacing: 2px;
     }
     aboutT1a{
         font-size: 1.0rem; 
+        letter-spacing: 2px;
     }
     .forcefontsize8-m {
         display: inline-block;

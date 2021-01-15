@@ -585,22 +585,33 @@ t5{
     position: relative;
     height: 650px; 
     z-index: 3;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .aboutTopPic{
     position: relative;  
     padding-left: 10%;
-    margin-top: 15%;
+    margin-top: 14%;
     text-align: center;
 }
 .aboutTopText{
     position: relative; 
     padding: 0; 
-    margin-top: 17%;
+    margin-top: 16%;
     padding-left: 1%;
 }
 @media(max-width: 768px){
+    .aboutTop{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .aboutTopPic{
         padding-left: 5%;
+        height: 45%;
+        padding-right: 0;
+    }
+    .aboutTopText{
+        width: 48%;
     }
 }
 .aboutTop-bg{
@@ -642,17 +653,29 @@ t5{
     }
 }
 .aboutBotTitle{
+    margin-top: 1%; 
     margin-bottom: 0px; 
     padding-left: 2%;
     padding-right: 0;
 }
 .aboutBotTitleC{
-    padding-left: 3%;
+    padding-left: 2.2%;
+    margin-top: -4px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transform-origin: left;
+    -webkit-text-size-adjust:none;
+    -webkit-transform : scale(0.9,0.9);
 }
 @media(max-width: 768px){
+    .aboutBotTitle{
+        margin-bottom: 2%;
+    }    
     .aboutBotTitleC{
         padding-left: 0;
-        padding-top: 2%;
+        padding-top: 2.5%;
+        margin-bottom: 0;
+        margin-left: -40px;
     }   
 }
 .aboutBotContentL{
@@ -664,17 +687,32 @@ t5{
     margin-bottom: 10px; 
     padding: 2%;
 }
+.aboutT3a{
+    display: inline-block;
+    margin-top: 2.5%;
+}
 @media(max-width: 768px){
     .aboutBotContentL{
+        padding: 0;
         padding-left: 5%;
-    }   
+    }
+    .aboutBotContentR{
+        padding: 0;
+        padding-right: 5%;
+    }
+    .aboutT3a{
+        display: inline-block;
+        margin-top: 15px;
+    }
 }
+
 
 aboutT1{
     font-size: 2.0rem; 
     font-family: 'Cambria';
     font-weight: bold;
     letter-spacing: 8px;
+    color:rgb(65, 70, 85);
 }
 aboutT1a{
     font-size: 1.1rem; 
@@ -695,7 +733,15 @@ aboutT1a{
         display: inline-block;
         transform-origin: left;
         -webkit-text-size-adjust:none;
-        -webkit-transform : scale(0.66,0.66);
+        -webkit-transform : scale(0.8,0.8);
+    }
+    .forcefontsize10-m {
+        display: inline-block;
+        -webkit-text-size-adjust:none;
+        -webkit-transform : scale(0.8,0.8);
+    }
+    .aboutT2b{
+        letter-spacing: 4px;
     }
 }
 
@@ -705,28 +751,41 @@ aboutT2{
     font-family: 'Cambria';
     font-weight: bold;
     letter-spacing: 1.3rem;
+    color:rgb(65, 70, 85);
 }
-aboutT2b{
+aboutT2a{
     font-size: 1.0rem; 
     font-family: 'Cambria';
+    letter-spacing: 3px;
+    color: rgb(65, 70, 85);
+    -webkit-text-stroke: 0.3px rgb(65, 70, 85);
+    text-stroke:0.3px rgb(65, 70, 85);
 }
 aboutT2b{
-    font-size: 1.0rem; 
+    font-size: 0.8rem; 
     font-family: 'yugothic';
+    color: rgb(129, 129, 129);
+    letter-spacing: 6px;
 }
+
 aboutT3{
-    font-size: 1.3rem; 
+    font-size: 1.1rem; 
     font-family: 'Cambria';
     font-weight: bold;
-    color: rgb(129, 129, 129);
+    letter-spacing: 2px;
+    color:rgb(65, 70, 85);
 }
 aboutT3a{
     font-size: 1.0rem; 
     font-family: 'Cambria';
-    color: rgb(129, 129, 129);
+    letter-spacing: 1.2px;
+    color:rgb(65, 70, 85);
+    -webkit-text-stroke: 0.3px rgb(65, 70, 85);
+    text-stroke:0.3px rgb(65, 70, 85);
 }
 aboutT3b{
     font-size: 0.7rem; 
     font-family: 'yugothic';
-    color: rgb(129, 129, 129);
+    color:rgb(65, 70, 85);
+    letter-spacing: 1px;
 }

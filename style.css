@@ -138,7 +138,19 @@ opacity: 1.0;
         max-width: 120px;
     }
 }
-
+.dropdown-item-text{
+    font-size: 0.85rem;
+    font-family: 'yugothic';
+}
+.dropdown-item-text1{
+    font-size: 0.85rem;
+    font-family: 'Consolas';
+    display: inline-block;
+    margin-left: 1.2%;
+}
+.home-text2{
+    font-family: 'yugothic';
+}
 @media (max-width: 767px) { 
      .navbar-collapse-bg{
         background-color: rgba(0, 0, 0, 0.9);
@@ -185,6 +197,7 @@ opacity: 1.0;
 
 
 
+
 /* 按鈕滑入滑出效果 */
 @media(min-width: 768px){
     .dropdown-toggle::after {
@@ -218,11 +231,49 @@ opacity: 1.0;
         position: absolute;
         transform:scaleY(0);
         transition:transform 0.2s;
-    }    
+    }
     .home-hover:hover .home-text1{opacity: 0;}
     .home-hover:hover .home-text2{transform:scaleY(1);}
     .home-hover:hover .home-text3{transform:scaleX(1);}
+
+    .dropdown .dropdown-menu{
+        -webkit-animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) alternate both;
+                animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) alternate both;
+    }
+    @-webkit-keyframes swing-in-top-fwd {
+      0% {
+        -webkit-transform: rotateX(-100deg);
+                transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        opacity: 1;
+      }
+    }
+    @keyframes swing-in-top-fwd {
+      0% {
+        -webkit-transform: rotateX(-100deg);
+                transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        opacity: 1;
+      }
+    }
 }
+
 
 
 
@@ -321,6 +372,15 @@ opacity: 1.0;
     background-color: rgb(147, 149, 153);
     color:white;
 }
+.footer01{
+    position: relative;
+    padding-bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    height:17%;
+    background-color:white;
+    color: rgb(65, 70, 85);
+}
 @media(max-width: 767px){
     .footer{
         height:20%;
@@ -341,7 +401,7 @@ opacity: 1.0;
     letter-spacing: 2px;
     padding: 0;
     display: none;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 .bg-4{
     font-size: 0.75rem;
@@ -354,6 +414,7 @@ opacity: 1.0;
     letter-spacing: 2px;
     padding: 0;
     display: none;
+    margin-top: 0.5rem;
 }
 .bg-6{
     font-size: 0.75rem;
@@ -366,6 +427,16 @@ opacity: 1.0;
     height:100%;
     margin-top: 0;
     text-align: center;
+}
+.footer-text{
+    font-family: 'Consolas';
+}
+.footer-text-bold{
+    font-family: 'yugothic';
+    -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+    -moz-text-stroke: 0.1px rgb(0, 0, 0);
+    -o-text-stroke: 0.1px rgb(0, 0, 0);
+    text-stroke:0.1px rgb(0, 0, 0);
 }
 @media(max-width: 767px){
     .footer{
@@ -545,19 +616,55 @@ t5{
 }
 
 /* Project01 Page */
-.title{
+.title01{
     text-align: center;
     justify-self: center;
-    font-size: 5rem;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    font-family: 'Cambria';
+    margin-top: 15%;
+    margin-bottom: 5%;
+    color: rgb(163, 163, 163);
+}
+.projectT1{
+    font-family: 'Consolas';
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    margin-top: 1%;
+    color: rgb(65, 70, 85);
+    -webkit-text-stroke: 0.3px rgb(65, 70, 85);
+    -moz-text-stroke: 0.3px rgb(65, 70, 85);
+    -o-text-stroke: 0.3px rgb(65, 70, 85);
+    text-stroke:0.3px rgb(65, 70, 85);
 }
 .projectDetail{
     padding: 0px;
-    height: 250px;
+    height: 300px;
+    margin-top: 5%;
 }
 .projectDetailText{
-    height: 250px;
+    height: 300px;
     display: inline-block;
-    background-color: rgb(209, 199, 199);
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    background-color: rgb(238, 238, 238);
+}
+.projectDetailTextT1{
+    display: inline-block;
+    font-family: 'yugothic';
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    display: inline-block;
+    transform-origin: left;
+    -webkit-text-size-adjust:none;
+    -webkit-transform : scale(0.85,0.85);
+    color: rgb(65, 70, 85);
+    -webkit-text-stroke: 0.1px rgb(65, 70, 85);
+    -moz-text-stroke: 0.1px rgb(65, 70, 85);
+    -o-text-stroke: 0.1px rgb(65, 70, 85);
+    text-stroke:0.1px rgb(65, 70, 85);
+    margin-bottom: 1%;
 }
 .projectDetailFBIG{
     margin: 0; 
@@ -570,14 +677,40 @@ t5{
     margin-bottom: 10px;
     padding: 0px;
     padding-bottom: 10px; 
-    background-color: rgb(209, 199, 199);
+    background-color: rgb(238, 238, 238);
 }
 .pSlcikPicsText{
-    padding-top: 50px;
-    padding-left: 30px;
-    font-size: 1.0rem;
-    background-color: rgb(209, 199, 199);
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.4rem;
+    background-color: rgb(238, 238, 238);
     text-align: left;
+}
+.pSlcikPicsTextT1{
+    font-family: 'Cambria';
+    letter-spacing: 1.5px;
+    font-size: 1.0rem;
+    color: rgb(65, 70, 85);
+    font-weight: bold;
+}
+.pSlcikPicsTextT2{
+    margin-left: 0.3rem;
+    font-family: 'yugothic';
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    display: inline-block;
+    transform-origin: left;
+    -webkit-text-size-adjust:none;
+    -webkit-transform : scale(0.85,0.85);
+    color: rgb(65, 70, 85);
+    -webkit-text-stroke: 0.2px rgb(65, 70, 85);
+    -moz-text-stroke: 0.2px rgb(65, 70, 85);
+    -o-text-stroke: 0.2px rgb(65, 70, 85);
+    text-stroke:0.2px rgb(65, 70, 85);
+}
+.proSlide{
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 
 /* About Page */
@@ -674,8 +807,9 @@ t5{
     .aboutBotTitleC{
         padding-left: 0;
         padding-top: 2.5%;
+        padding-right: 10%;
         margin-bottom: 0;
-        margin-left: -40px;
+        margin-left: 0;
     }   
 }
 .aboutBotContentL{
@@ -759,6 +893,8 @@ aboutT2a{
     letter-spacing: 3px;
     color: rgb(65, 70, 85);
     -webkit-text-stroke: 0.3px rgb(65, 70, 85);
+    -moz-text-stroke: 0.3px rgb(65, 70, 85);
+    -o-text-stroke: 0.3px rgb(65, 70, 85);
     text-stroke:0.3px rgb(65, 70, 85);
 }
 aboutT2b{
@@ -781,6 +917,8 @@ aboutT3a{
     letter-spacing: 1.2px;
     color:rgb(65, 70, 85);
     -webkit-text-stroke: 0.3px rgb(65, 70, 85);
+    -moz-text-stroke: 0.3px rgb(65, 70, 85);
+    -o-text-stroke: 0.3px rgb(65, 70, 85);
     text-stroke:0.3px rgb(65, 70, 85);
 }
 aboutT3b{

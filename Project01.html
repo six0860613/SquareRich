@@ -22,7 +22,7 @@
   <!-- Navigation -->
   <!-- .navbar-expand-{sm|md|lg|xl}決定在哪個斷點以上就出現漢堡式選單 -->
   <!-- navbar-dark 文字顏色 .bg-dark 背景顏色 -->
-  <nav id="TopNavbar" class="navbar navbar-expand-md navbar-light nabar-bg">
+  <nav id="TopNavbar" class="navbar navbar-expand-md navbar-light" style="background-color: white;">
 
     <!-- .navbar-brand 左上LOGO位置 -->
     <a class="navbar-brand" href="index.html">
@@ -48,10 +48,10 @@
           <a class="nav-link home-text1">Project</a>
           <a class="nav-link home-text2">作 品</a>
           <div class="dropdown-menu dropdown-bg" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Project.html"> ALL</a>
-            <a class="dropdown-item" href="Project.html#project01">居所</a>
-            <a class="dropdown-item" href="Project.html#project02">商空</a>
-            <a class="dropdown-item" href="Project.html#project03">辦公</a>
+            <a class="dropdown-item dropdown-item-text1" href="Project.html"> ALL</a>
+            <a class="dropdown-item dropdown-item-text" href="Project.html#project01">居所</a>
+            <a class="dropdown-item dropdown-item-text" href="Project.html#project02">商空</a>
+            <a class="dropdown-item dropdown-item-text" href="Project.html#project03">辦公</a>
           </div>
         </div>
         <div class="nav-item col home-hover">
@@ -69,19 +69,19 @@
     <!-- title -->
     <div class="container">
       <div class="row">
-        <div class="col title">01</div>
+        <div class="col title01">01</div>
       </div>
       <div class="row text-center justify-content-center">
-        <div class="col-8">
-          <t2>Banqiao |</t2>
+        <div class="col-8 projectT1">
+          <span>Banqiao|</span>
         </div>
         <div class="w-100"></div>
-        <div class="col-8">
-          <t2>Dwelling |</t2>
+        <div class="col-8 projectT1">
+          <span>Dwelling|</span>
         </div>
         <div class="w-100"></div>
-        <div class="col-8">
-          <t2>2020 |</t2>
+        <div class="col-8 projectT1">
+          <span>2020|</span>
         </div>
       </div>
     </div>
@@ -90,15 +90,15 @@
     <div class="container projectDetail">
       <div clas="row no-gutters">
         <div class="col-8 offset-2 projectDetailText">
-          <t3>設計師/ 黃偉珉</t3>
+          <span class="projectDetailTextT1">設計師/ 黃偉珉</span>
           <div class="w-100"></div>
-          <t3>空間性質/ 居所</t3>
+          <span class="projectDetailTextT1">空間性質/ 居所</span>
           <div class="w-100"></div>
-          <t3>規劃面積/ ***坪</t3>
+          <span class="projectDetailTextT1">規劃面積/ ***坪</span>
           <div class="w-100"></div>
-          <t3>主要建材/ **</t3n>
-            <div class="w-100"></div>
-            <t3>座落位置/ 板橋區</t3>
+          <span class="projectDetailTextT1">主要建材/ **</span>
+          <div class="w-100"></div>
+          <span class="projectDetailTextT1">座落位置/ 板橋區</span>
         </div>
         <div class="col-1 projectDetailFBIG">
           <img src="image/FB.png" height="20px;"
@@ -112,15 +112,15 @@
     <div class="container">
       <div class="row text-center justify-content-center">
         <div class="col-8" style="margin-bottom: 10px; padding: 0px;">
-          <img src="image/400X250.png"></img>
+          <img src="image/XinDieng/XD04.jpg"></img>
         </div>
         <div class="w-100"></div>
         <div class="col-8" style="margin-bottom: 10px; padding: 0px;">
-          <img src="image/400X250.png"></img>
+          <img src="image/XinDieng/XD05.jpg"></img>
         </div>
         <div class="w-100"></div>
         <div class="col-8" style="padding: 0px;">
-          <img src="image/400X250.png"></img>
+          <img src="image/XinDieng/XD06.jpg"></img>
         </div>
       </div>
     </div>
@@ -129,23 +129,24 @@
     <div class="container">
       <div class="row text-center justify-content-center">
         <div class="col-8 pSlcikPicsText">
-          <t5>Other Projects 其他作品</t5>
+          <span class="pSlcikPicsTextT1">Other Projects</span>
+          <span class="pSlcikPicsTextT2">其他作品</span>
         </div>
         <div class="w-100"></div>
         <div class="col-8 pSlcikPics">
           <div class="container-fluid">
             <div id="carousel-example" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                <div class="carousel-item col-6 col-md-4 active">
+                <div class="carousel-item proSlide col-6 col-md-4 active">
                   <img src="image/index_slide_2.jpg" class="img-fluid mx-auto d-block" alt="img1">
                 </div>
-                <div class="carousel-item col-6 col-md-4  ">
+                <div class="carousel-item proSlide col-6 col-md-4">
                   <img src="image/index_slide_1.jpg" class="img-fluid mx-auto d-block" alt="img2">
                 </div>
-                <div class="carousel-item col-6 col-md-4  ">
+                <div class="carousel-item proSlide col-6 col-md-4">
                   <img src="image/index_slide_3.jpg" class="img-fluid mx-auto d-block" alt="img3">
                 </div>
-                <div class="carousel-item col-6 col-md-4  ">
+                <div class="carousel-item proSlide col-6 col-md-4">
                   <img src="image/index_slide_2.jpg" class="img-fluid mx-auto d-block" alt="img4">
                 </div>
               </div>
@@ -174,19 +175,20 @@
 
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer01">
     <div class="container footer-content">
       <div class="row h-100 align-items-end">
         <div class="col-md-12 bg-4">
-          T<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6577&emsp;&emsp;
-          P<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6576&emsp;&emsp;
-          M<t5 class="forcefontsize8">&ensp;|</t5>sr50795118@gmail.com&emsp;&emsp;
-          新北市新店區中正路54巷24號5樓
+          <span class="footer-text">T<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6577&emsp;&emsp;</span>
+          <span class="footer-text">P<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6576&emsp;&emsp;</span>
+          <span class="footer-text">M<t5 class="forcefontsize8">&ensp;|</t5>sr50795118@gmail.com&emsp;&emsp;</span>
+          <span class="footer-text-bold">新北市新店區中正路54巷24號5樓</span>
         </div>
         <!-- mobile page -->
-        <div class="col-12 col-md-3 bg-2">矩沛室內裝修工程有限公司</div>
-        <div class="col-12 col-md-2 offset-md-2 bg-3">T<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6577</div>
-        <div class="col-12 col-md-2 bg-5">M<t5 class="forcefontsize8">&ensp;|</t5>sr50795118@gmail.com</div>
+        <div class="col-12 col-md-3 bg-2 footer-text">矩沛室內裝修工程有限公司</div>
+        <div class="col-12 col-md-2 offset-md-2 bg-3 footer-text">T<t5 class="forcefontsize8">&ensp;|</t5>02 2911-6577
+        </div>
+        <div class="col-12 col-md-2 bg-5 footer-text">M<t5 class="forcefontsize8">&ensp;|</t5>sr50795118@gmail.com</div>
       </div>
     </div>
   </footer>
@@ -200,9 +202,7 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- silde JavaScript -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
   <script>
     /* dropdown-menu觸發由click改為hover */
@@ -255,6 +255,7 @@
         var clickOver = $(event.target)
         if ($('.navbar .navbar-toggler').attr('aria-expanded') == 'true' && clickOver.closest('.navbar').length === 0) {
           $('button[aria-expanded="true"]').click();
+          console.log("TTT");
         }
       });
     }

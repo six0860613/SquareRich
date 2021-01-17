@@ -382,9 +382,24 @@ opacity: 1.0;
     background-color:white;
     color: rgb(65, 70, 85);
 }
+.footer02{
+    position: relative;
+    padding-bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    height:17%;
+    background-color: rgb(147, 149, 153);
+    color:white;
+}
 @media(max-width: 767px){
     .footer{
         height:20%;
+    }
+    .footer01{
+        height:22.5%;
+    }
+    .footer02{
+        height:22.5%;
     }
 }
 
@@ -592,6 +607,18 @@ t5{
         top: -60px; 
         vertical-align: top;
     }
+    .project2picsL{
+        padding-left: 25px;
+    }
+    .project2picsR{
+        padding-right: 25px;
+    }
+}
+@media(max-width: 768px){
+    .project2pics{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 
@@ -759,6 +786,9 @@ t5{
     .aboutTopText{
         width: 48%;
     }
+    .aboutTopTextT1{
+        padding-left: 13px;
+    }
 }
 .aboutTop-bg{
     position: absolute;
@@ -801,7 +831,7 @@ t5{
 .aboutBotTitle{
     margin-top: 1%; 
     margin-bottom: 0px; 
-    padding-left: 2%;
+    padding-left: 3%;
     padding-right: 0;
 }
 .aboutBotTitleC{
@@ -838,6 +868,9 @@ t5{
     display: inline-block;
     margin-top: 2.5%;
 }
+.aboutT3Interior{
+    display: none;
+}
 @media(max-width: 768px){
     .aboutBotContentL{
         padding: 0;
@@ -850,6 +883,12 @@ t5{
     .aboutT3a{
         display: inline-block;
         margin-top: 15px;
+    }
+    .aboutT3Interior{
+        display: inline-block;
+    }
+    .aboutT3Interior1{
+        display: none;
     }
 }
 

@@ -23,7 +23,7 @@ Attribution required
   
   
   
-  @media (min-width: 768px)  {
+  @media (min-width: 768px) and (max-width: 768px) {
     /* Show 3rd slide on sm  if col-sm-6*/
       .carousel-inner .active.carousel-item + .carousel-item + .carousel-item {
           position: absolute;

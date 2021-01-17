@@ -7,7 +7,7 @@ Attribution required
 
 
 
-@media (min-width: 100px) {
+@media (min-width: 768px) {
     /* Show 4th slide on md  if col-md-4*/
       .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
           position: absolute;
@@ -23,7 +23,7 @@ Attribution required
   
   
   
-  @media (min-width: 100px) and (max-width: 768px) {
+  @media (min-width: 768px)  {
     /* Show 3rd slide on sm  if col-sm-6*/
       .carousel-inner .active.carousel-item + .carousel-item + .carousel-item {
           position: absolute;
@@ -35,8 +35,7 @@ Attribution required
       }
   
   }
-  @media (min-width: 100px) {
-      
+  @media (min-width: 768px) {
       .carousel-item {
           margin-right: 0;
       }
@@ -89,7 +88,7 @@ Attribution required
   }
   
   /*MD*/
-  @media (min-width: 100px) {
+@media (min-width: 768px) {
   
       /* show 3rd of 3 item slide */
     .carousel-inner .active + .carousel-item + .carousel-item {
@@ -122,7 +121,8 @@ Attribution required
           display: block;
           visibility: visible;
       }
-  
+    }
+}
   
   
   
@@ -213,5 +213,5 @@ Attribution required
           display: block;
           visibility: visible;
       }
-  */
-  }
+  
+  }*/

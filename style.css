@@ -685,12 +685,23 @@ t5{
     padding-left: 2.5rem;
     background-color: rgb(238, 238, 238);
 }
+.projectDetailTextT0{
+    display: inline-block;
+    font-family: 'yugothic';
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: rgb(129, 129, 129);
+    -webkit-text-stroke: 0.1px rgb(129, 129, 129);
+    -moz-text-stroke: 0.1px rgb(129, 129, 129);
+    -o-text-stroke: 0.1px rgb(129, 129, 129);
+    text-stroke:0.1px rgb(129, 129, 129);
+    margin-bottom: 1%;
+}
 .projectDetailTextT1{
     display: inline-block;
     font-family: 'yugothic';
     font-size: 0.75rem;
     letter-spacing: 2px;
-    display: inline-block;
     transform-origin: left;
     -webkit-text-size-adjust:none;
     -webkit-transform : scale(0.85,0.85);

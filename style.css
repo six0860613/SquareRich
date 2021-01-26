@@ -712,6 +712,12 @@ t5{
     text-stroke:0.1px rgb(129, 129, 129);
     margin-bottom: 1%;
 }
+@media(max-width: 768px){
+    .projectDetailTextT1br{
+        display: inline-block; 
+        width: 70%;
+    }
+}
 .projectDetailFBIG{
     margin: 0; 
     margin-top: 20px; 

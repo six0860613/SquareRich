@@ -299,7 +299,7 @@ opacity: 1.0;
 }
 @media (max-width: 768px){
     .slideBox{
-        width: 45%;
+        width: 48%;
         height: 40%;
         min-width: 130px;
         min-height: 300px;

@@ -1,0 +1,9 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+RewriteCond %{HTTP_HOST} ^square\-rich\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.square\-rich\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^square\-rich\.com
+RewriteRule ^/?$ "https\:\/\/square\-rich\.com\/index\.html" [R=301,L]
+

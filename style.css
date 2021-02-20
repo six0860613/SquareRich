@@ -809,7 +809,7 @@ t5{
     }
     .aboutTopPic{
         padding-left: 5%;
-        padding-top: 10%;
+        padding-top: 4rem;
         height: 45%;
         padding-right: 0;
     }
@@ -877,14 +877,9 @@ t5{
 @media(max-width: 768px){
     .aboutBotTitle{
         padding-left: 5%;
-        margin-bottom: 2%;
     }    
     .aboutBotTitleC{
-        padding-left: 0;
-        padding-top: 2.5%;
-        padding-right: 10%;
-        margin-bottom: 0;
-        margin-left: 0;
+        padding-left: 5.6%;
     }   
 }
 .aboutBotContentL{
@@ -900,13 +895,11 @@ t5{
     display: inline-block;
     margin-top: 2.5%;
 }
-.aboutT3Interior{
-    display: none;
-}
+
 @media(max-width: 768px){
     .aboutBotContentL{
         padding: 0;
-        padding-left: 6.25%;
+        padding-left: 7%;
     }
     .aboutBotContentR{
         padding: 0;
@@ -915,12 +908,6 @@ t5{
     .aboutT3a{
         display: inline-block;
         margin-top: 15px;
-    }
-    .aboutT3Interior{
-        display: inline-block;
-    }
-    .aboutT3Interior1{
-        display: none;
     }
 }
 

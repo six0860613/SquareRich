@@ -809,7 +809,7 @@ t5{
     }
     .aboutTopPic{
         padding-left: 5%;
-        padding-top: 14%;
+        padding-top: 10%;
         height: 45%;
         padding-right: 0;
     }
@@ -876,7 +876,7 @@ t5{
 }
 @media(max-width: 768px){
     .aboutBotTitle{
-        padding-left: 3%;
+        padding-left: 5%;
         margin-bottom: 2%;
     }    
     .aboutBotTitleC{
@@ -906,7 +906,7 @@ t5{
 @media(max-width: 768px){
     .aboutBotContentL{
         padding: 0;
-        padding-left: 5%;
+        padding-left: 6.25%;
     }
     .aboutBotContentR{
         padding: 0;
@@ -982,7 +982,7 @@ aboutT2a{
     text-stroke:0.3px rgb(65, 70, 85);
 }
 aboutT2b{
-    font-size: 0.8rem; 
+    font-size: 0.9rem; 
     font-family: 'yugothic';
     color: rgb(129, 129, 129);
     letter-spacing: 6px;
